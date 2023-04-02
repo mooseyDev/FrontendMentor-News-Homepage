@@ -1,0 +1,95 @@
+body {
+  box-sizing: border-box;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #faf9f6;
+}
+
+.container {
+  display: grid;
+  border: 5px solid rgb(49, 228, 33);
+  max-width: 1100px;
+  max-height: 900px;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'nav nav nav'
+    'mainimg mainimg side'
+    'maintitle maininfo side'
+    'card1 card2 card3';
+}
+.item {
+  background-color: rgb(236, 42, 42);
+  border: 2px dashed rgb(136, 0, 136);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 3rem;
+  color: rgb(226, 225, 223);
+  padding: 15px;
+  max-width: 100%;
+}
+
+.item1 {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item2 {
+  grid-area: mainimg;
+  height: 200px;
+}
+.item3 {
+  grid-area: side;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item4 {
+  grid-area: maintitle;
+}
+.item5 {
+  grid-area: maininfo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item6 {
+  grid-area: card1;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+}
+.item7 {
+  grid-area: card2;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+}
+.item8 {
+  grid-area: card3;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  line-height: 0.95;
+}
+button {
+  letter-spacing: 3px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 0;
+  border: none;
+  color: white;
+  height: 45px;
+  background-color: orange;
+}
+h3 {
+  font-size: 3rem;
+  margin: 5px 0px -5px 0px;
+  color: orange;
+}
